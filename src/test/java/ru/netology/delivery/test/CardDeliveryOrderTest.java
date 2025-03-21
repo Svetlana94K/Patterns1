@@ -1,5 +1,6 @@
 package ru.netology.delivery.test;
 
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class CardDeliveryOrderTest {
     @BeforeEach
     void setup() {
-        open("http://localhost:9999");
+        Selenide.open("http://localhost:9999");
     }
 
     @Test
